@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Find weather of places</title>
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    <section id="main">
+        <div class="main-container">
+            <h1 class = "font-style">Weather-App</h1>
+            <p class = "desc font-style">Search weather of any city</p>
+            <div class="weather-container">
+                <input type="text" id="city" class="font-style" placeholder="Enter city here">
+                <button id = "searchButton">Search</button>
+                <div class="underline"></div>
+                <div id = "result">
+                    <h2 class = "font-style">Weather Status : </h2>
+                    <div class = "status">
+                        <span id = "icon"><img src = ""></span>
+                        <h3 id="stats" class = "font-style"></h3>
+                    </div>
+                    <p id="temp" class = "font-style"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+:root{
+    --background-color: #2C547D;
+    --secondary-color: #B2C7DC;
+    --text-color: #1C3C61;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-color: var(--background-color);
+}
+#main{
+    border: 2px solid black;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.3);
+}
+.weather-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+#city{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+#searchButton{
+    padding: 1rem 1.6rem;
+    background-color: var(--background-color);
+    color: whitesmoke;
+    border: none;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+#result{
+    text-align: center;
+}
+
+.underline{
+    border: 2px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.1);
+    width: 90%;
+}
+.status{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.font-style{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.desc{
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width: 1224px) {
+    .main-container{
+        width: 350px;
+    }
+}
